@@ -1,23 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Square msg="This is square"/>
+    <Triangle msg="This is triangle"/>
+    <Parallelogram msg="This is parallelogram"/>
+    <Circlet msg="This is circle"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+
+import Square from "./components/Square.vue"
+import Triangle from "./components/Triangle.vue"
+import Parallelogram from "./components/Parallelogram.vue"
+import Circlet from "./components/Circlet.vue"
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+        Square,
+      Triangle,
+  Parallelogram,
+         Circlet
   }
 };
 </script>
 
 <style lang="scss">
+
 #app {
+  float: left;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,4 +36,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
